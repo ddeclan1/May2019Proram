@@ -10,7 +10,7 @@ import com.mastek.training.hrapp.entities.Employee;
 
 @Component 
 public interface EmployeeRepository extends CrudRepository<Employee, Integer>{
-	//Declare the custom query method wit the same name as the query
+	//Declare the custom query method with the same name as the query
 	public List<Employee> findBySalary(
 			@Param("min") Double min, //Declare parameter name
 			@Param("max") Double max);
